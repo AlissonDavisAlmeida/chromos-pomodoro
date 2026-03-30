@@ -1,35 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Heading } from "./components/Heading"
+import "./styles/global.css"
 
-function App() {
-  const [count, setCount] = useState(0)
+export const App = () => {
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+
+
+    return (
+        <>
+            <Heading />
+            <p>
+                This is a simple Pomodoro timer built with React. It helps you manage your time effectively by breaking work into intervals, traditionally 25 minutes in length, separated by short breaks. The timer will notify you when it's time to take a break or get back to work. Stay focused and boost your productivity with this handy tool!
+            </p>
+        </>
+    )
 }
-
-export default App
